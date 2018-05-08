@@ -4,8 +4,8 @@ const linkStyle = {
 	marginRight: 15
 };
 
-const Header = props => (
-	<div style={props.style}>
+const Header = () => (
+	<div>
 		<Link href="/">
 			<a style={linkStyle}>Home</a>
 		</Link>
