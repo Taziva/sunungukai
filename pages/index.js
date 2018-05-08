@@ -1,4 +1,3 @@
-import axios from "axios";
 import "../sass/main.scss";
 
 import Layout from "../components/Layout";
