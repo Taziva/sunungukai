@@ -1,3 +1,29 @@
 {
-    "extends": "keystone"
+  "extends": [
+    "keystone",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "quotes": "off",
+    "quote-props": "off",
+    "comma-dangle": "off",
+    "react/jsx-uses-vars": [2],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  },
+  "env": {
+    "jest/globals": true
+  }
 }
