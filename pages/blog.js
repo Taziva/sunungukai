@@ -1,5 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
 import Layout from "../components/Layout";
 import "../sass/main.scss";
@@ -56,5 +57,9 @@ class Blog extends Component {
 		);
 	}
 }
+
+Blog.propTypes = {
+	posts: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default Blog;
