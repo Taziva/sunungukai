@@ -184,22 +184,21 @@ var _jsxFileName = "/Users/shoniwamarovatsanga/Documents/Projects/sunungukai/pag
 
 
 
-
 var Landing = function Landing() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Layout__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     }
   }, "Sunungukai"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     }
   }, "This is the Landing Page"));
 };
