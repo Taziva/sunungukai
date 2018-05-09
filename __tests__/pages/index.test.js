@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
-import App from "../pages/index.js";
+import App from "../../pages/index.js";
 
 describe("Landing Page", () => {
 	it('shows "Sunungukai"', () => {

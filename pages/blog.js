@@ -15,17 +15,6 @@ class Blog extends Component {
 		return (
 			<Layout>
 				<div className="container">
-					<style jsx>{`
-						.header {
-							padding: 16px 16px;
-						}
-						.content {
-							padding: 16px 16px;
-						}
-						.post {
-							margin-bottom: 16px;
-						}
-					`}</style>
 					<div className="header">
 						<h1>Sunungukai</h1>
 					</div>
@@ -35,11 +24,7 @@ class Blog extends Component {
 								<div className="post" key={i}>
 									<div className="row">
 										<div className="col-12 col-md-4">
-											<img
-												className="img-fluid"
-												src={post.image.secure_url}
-												width="50%"
-											/>
+											<img className="img-fluid" src={post.image.secure_url} />
 										</div>
 										<div className="col-12 col-md-8">
 											<h2>{post.title}</h2>
