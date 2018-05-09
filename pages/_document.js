@@ -22,6 +22,10 @@ export default class MyDocument extends Document {
 						integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
 						crossOrigin="anonymous"
 					/>
+					<link
+						href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+						rel="stylesheet"
+					/>
 					<link rel="stylesheet" href="/_next/static/style.css" />
 				</Head>
 				<body>

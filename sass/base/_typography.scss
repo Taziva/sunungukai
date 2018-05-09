@@ -1,0 +1,45 @@
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	/*font-size: 16px;*/
+	line-height: 1.7;
+}
+
+.heading-primary {
+	&--main {
+		display: block;
+		font-family: RuffleScript;
+		font-size: 15rem;
+		background-image: linear-gradient(
+			to right,
+			$color-primary,
+			$color-secondary
+		);
+		color: transparent;
+		-webkit-background-clip: text;
+		@include respond(phone) {
+			font-size: 10rem;
+		}
+	}
+
+	&--sub {
+		display: block;
+	}
+}
+
+.heading-secondary {
+	font-size: 5rem;
+	font-family: RuffleScript;
+	background-image: linear-gradient(to right, $color-primary, $color-secondary);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+	color: $color-grey;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
