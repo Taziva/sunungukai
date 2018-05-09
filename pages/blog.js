@@ -3,6 +3,7 @@ import axios from "axios";
 import PropTypes from "prop-types";
 
 import Layout from "../components/Layout";
+import Post from "../components/Post";
 import "../sass/main.scss";
 
 class Blog extends Component {
@@ -20,21 +21,7 @@ class Blog extends Component {
 					</div>
 					<div className="content">
 						{this.props.posts.map((post, i) => {
-							return (
-								<div className="post" key={i}>
-									<div className="row">
-										<div className="col-12 col-md-4">
-											<img className="img-fluid" src={post.image.secure_url} />
-										</div>
-										<div className="col-12 col-md-8">
-											<h2>{post.title}</h2>
-											<div
-												dangerouslySetInnerHTML={{ __html: post.content.brief }}
-											/>
-										</div>
-									</div>
-								</div>
-							);
+							return <Post post={post} key={i} />;
 						})}
 					</div>
 				</div>
