@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	padding: 0 3rem;
+
+	&__content {
+		border-top: 1px solid $color-grey-light;
+		flex: 1 1 100%;
+		padding: 2rem;
+	}
+
+	&__copyright {
+		font-size: 1.3rem;
+		color: $color-grey;
+	}
+}
