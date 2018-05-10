@@ -8,7 +8,7 @@ import "../sass/main.scss";
 
 class Blog extends Component {
 	static async getInitialProps() {
-		let response = await axios.get("http://localhost:3000/api/posts");
+		let response = await axios.get("/api/posts");
 		return { posts: response.data };
 	}
 
