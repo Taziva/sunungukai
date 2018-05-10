@@ -1,21 +1,21 @@
-import Link from "next/link";
-
-const linkStyle = {
-	marginRight: 15
-};
-
+import NavLink from "./navigation/NavLink";
 const Header = () => (
-	<div>
-		<Link href="/">
-			<a style={linkStyle}>Home</a>
-		</Link>
-		<Link href="/blog">
-			<a style={linkStyle}>Blog</a>
-		</Link>
-		<Link href="/about">
-			<a style={linkStyle}>About</a>
-		</Link>
-	</div>
+	<nav className="nav">
+		<div className="nav__logo">
+			<p>Sunungukai</p>
+		</div>
+		<ul className="nav__list">
+			<li>
+				<NavLink href="/" name="Home" />
+			</li>
+			<li>
+				<NavLink href="/blog" name="Blog" />
+			</li>
+			<li>
+				<NavLink href="/about" name="About" />
+			</li>
+		</ul>
+	</nav>
 );
 
 export default Header;
