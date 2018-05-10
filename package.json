@@ -35,6 +35,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "lint": "eslint .",
-    "start": "node keystone.js"
+    "start": "node keystone.js",
+    "heroku-postbuild": "next build"
   }
 }
