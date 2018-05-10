@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import NavLink from "./navigation/NavLink";
 const Header = () => (
 	<nav className="nav">
 		<div className="nav__logo">
@@ -7,19 +6,13 @@ const Header = () => (
 		</div>
 		<ul className="nav__list">
 			<li>
-				<Link href="/">
-					<a className="nav__link">Home</a>
-				</Link>
+				<NavLink href="/" name="Home" />
 			</li>
 			<li>
-				<Link href="/blog">
-					<a className="nav__link">Blog</a>
-				</Link>
+				<NavLink href="/blog" name="Blog" />
 			</li>
 			<li>
-				<Link href="/about">
-					<a className="nav__link">About</a>
-				</Link>
+				<NavLink href="/about" name="About" />
 			</li>
 		</ul>
 	</nav>
