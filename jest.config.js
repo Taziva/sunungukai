@@ -4,5 +4,8 @@ module.exports = {
 	collectCoverage: true,
 	moduleNameMapper: {
 		"\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+	},
+	transform: {
+		"^.+\\.(js|jsx)$": "<rootDir>/jestPreprocessor.js"
 	}
 };
