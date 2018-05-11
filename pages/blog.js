@@ -17,16 +17,18 @@ class Blog extends Component {
 	render() {
 		return (
 			<Layout>
-				<div className="container">
-					<div className="header">
-						<h1>Sunungukai</h1>
+				<section className="section-blog">
+					<div className="container">
+						<div className="header">
+							<h1>Sunungukai</h1>
+						</div>
+						<div className="content">
+							{this.props.posts.map((post, i) => {
+								return <Post post={post} key={i} />;
+							})}
+						</div>
 					</div>
-					<div className="content">
-						{this.props.posts.map((post, i) => {
-							return <Post post={post} key={i} />;
-						})}
-					</div>
-				</div>
+				</section>
 			</Layout>
 		);
 	}

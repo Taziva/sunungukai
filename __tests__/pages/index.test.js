@@ -23,7 +23,7 @@ describe("Landing Page", () => {
 			expect(app.find("video")).toHaveLength(1);
 		});
 		it("has a text area", () => {
-			expect(app.find(".section-about__text")).toHaveLength(1);
+			expect(app.find(".section-info__text")).toHaveLength(1);
 		});
 	});
 });
