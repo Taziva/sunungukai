@@ -14,10 +14,10 @@ const Landing = () => (
 				</h1>
 			</div>
 		</section>
-		<section className="section-about">
-			<div className="section-about__video">
+		<section className="section-info">
+			<div className="section-info__video">
 				<video
-					className="section-about__video-player"
+					className="section-info__video-player"
 					width="100%"
 					height="100%"
 					controls
@@ -28,7 +28,7 @@ const Landing = () => (
 					/>
 				</video>
 			</div>
-			<div className="section-about__text">
+			<div className="section-info__text">
 				<h2 className="heading-secondary">fantastic wildlife adventures</h2>
 				<p className="paragraph">
 					Come for an adventure in the African serengeti surrounded by beautiful
