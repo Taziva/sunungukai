@@ -1,6 +1,7 @@
 import "../sass/main.scss";
 
 import Layout from "../components/Layout";
+import Card from "../components/Card";
 
 const Landing = () => (
 	<Layout>
@@ -39,6 +40,32 @@ const Landing = () => (
 					park.
 				</p>
 			</div>
+		</section>
+		<section className="section-activities">
+			<Card section="activities" title="Explore Africa">
+				<p className="section-activities__card-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+					ipsum sapiente aspernatur.
+				</p>
+			</Card>
+			<Card section="activities" title="Explore Africa">
+				<p className="section-activities__card-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+					ipsum sapiente aspernatur.
+				</p>
+			</Card>
+			<Card section="activities" title="Explore Africa">
+				<p className="section-activities__card-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+					ipsum sapiente aspernatur.
+				</p>
+			</Card>
+			<Card section="activities" title="Explore Africa">
+				<p className="section-activities__card-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+					ipsum sapiente aspernatur.
+				</p>
+			</Card>
 		</section>
 	</Layout>
 );
