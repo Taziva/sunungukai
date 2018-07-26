@@ -2,6 +2,7 @@ import "../sass/main.scss";
 
 import Layout from "../components/Layout";
 import Card from "../components/Card";
+import SocialMediaLink from "../components/SocialMediaLink";
 
 const Landing = () => (
 	<Layout>
@@ -168,39 +169,21 @@ const Landing = () => (
 					Follow us on our journey
 				</h1>
 				<div className="section-social__media-icons">
-					<div className="section-social__media-icons-link">
-						<a href="#">
-							<img
-								src="/static/images/social/twitter.svg"
-								alt="piggy-bank"
-								height="62"
-								width="62"
-								className="section-social__media-icons-link-img"
-							/>
-						</a>
-					</div>
-					<div className="section-social__media-icons-link">
-						<a href="#">
-							<img
-								src="/static/images/social/facebook.svg"
-								alt="piggy-bank"
-								height="62"
-								width="62"
-								className="section-social__media-icons-link-img"
-							/>
-						</a>
-					</div>
-					<div className="section-social__media-icons-link">
-						<a href="#">
-							<img
-								src="/static/images/social/instagram.svg"
-								alt="piggy-bank"
-								height="62"
-								width="62"
-								className="section-social__media-icons-link-img"
-							/>
-						</a>
-					</div>
+					<SocialMediaLink
+						title="twitter"
+						link="#"
+						src="/static/images/social/twitter.svg"
+					/>
+					<SocialMediaLink
+						title="facebook"
+						link="#"
+						src="/static/images/social/facebook.svg"
+					/>
+					<SocialMediaLink
+						title="instagram"
+						link="#"
+						src="/static/images/social/instagram.svg"
+					/>
 				</div>
 			</div>
 		</section>
