@@ -22,22 +22,26 @@
 .section {
 	&-info {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column-reverse;
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 0;
 
 		&__video {
-			flex: 1 1 100%;
+			display: flex;
+			justify-content: space-around;
+			&-player {
+				width: 50%;
+			}
 		}
 
 		&__text {
-			flex: 1 1 100%;
-			padding: 0 3rem;
+			padding: 10rem 33rem;
+			text-align: center;
 		}
 	}
 
-	&-activities {
+	&-benefits {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -54,6 +58,30 @@
 			&-text {
 				font-size: 1.5rem;
 				color: $color-grey;
+			}
+		}
+	}
+	&-activities {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__content {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+	&-social {
+		&__media {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&-icons {
+				display: flex;
+				justify-content: space-between;
+				&-link {
+					margin: 2rem;
+				}
 			}
 		}
 	}
