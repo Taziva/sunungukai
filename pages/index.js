@@ -83,9 +83,9 @@ const Landing = () => (
 						</h4>
 						<div className="activity-card__details">
 							<ul>
-								<li>Game Walk $5</li>
-								<li>Game Drive $5</li>
-								<li>Umfurudzi Entrance $6</li>
+								<li>Game Walk</li>
+								<li>Game Drive</li>
+								<li>Umfurudzi Entrance</li>
 							</ul>
 						</div>
 					</div>
@@ -93,7 +93,7 @@ const Landing = () => (
 						<div className="activity-card__cta">
 							<div className="activity-card__price-box">
 								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$297</p>
+								<p className="activity-card__price-value">$25</p>
 							</div>
 							<a href="#popup" className="btn btn--white">
 								Book now!
@@ -108,7 +108,7 @@ const Landing = () => (
 						</div>
 						<h4 className="activity-card__heading">
 							<span className="activity-card__heading-span activity-card__heading-span--2">
-								Rest in the Getaway
+								Rest in the Serengeti
 							</span>
 						</h4>
 						<div className="activity-card__details">
@@ -123,7 +123,7 @@ const Landing = () => (
 						<div className="activity-card__cta">
 							<div className="activity-card__price-box">
 								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$297</p>
+								<p className="activity-card__price-value">$25</p>
 							</div>
 							<a href="#popup" className="btn btn--white">
 								Book now!
@@ -153,7 +153,7 @@ const Landing = () => (
 						<div className="activity-card__cta">
 							<div className="activity-card__price-box">
 								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$297</p>
+								<p className="activity-card__price-value">$25</p>
 							</div>
 							<a href="#popup" className="btn btn--white">
 								Book now!

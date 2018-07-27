@@ -46,6 +46,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 
+		@include respond(phone) {
+			flex-direction: column;
+			padding: 3rem;
+		}
+
 		&__card {
 			margin: 5rem;
 			padding: 3rem;
@@ -65,9 +70,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		&__content {
 			display: flex;
 			justify-content: space-around;
+			@include respond(phone) {
+				flex-direction: column;
+			}
 		}
 	}
 	&-social {

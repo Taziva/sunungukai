@@ -9,8 +9,11 @@
 	-moz-perspective: 150rem;
 	position: relative;
 	height: 52rem;
-	width: 30rem;
+	width: 32rem;
 	margin: 5rem;
+	@include respond(phone) {
+		width: 38rem;
+	}
 
 	&__side {
 		height: 52rem;
