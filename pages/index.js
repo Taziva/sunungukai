@@ -3,6 +3,7 @@ import "../sass/main.scss";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import SocialMediaLink from "../components/SocialMediaLink";
+import ActivityCard from "../components/ActivityCard";
 
 const Landing = () => (
 	<Layout>
@@ -71,96 +72,24 @@ const Landing = () => (
 		<section className="section-activities">
 			<h2 className="heading-secondary">activities and attractions</h2>
 			<div className="section-activities__content">
-				<div className="activity-card">
-					<div className="activity-card__side activity-card__side--front">
-						<div className="activity-card__picture activity-card__picture--1">
-							&nbsp;
-						</div>
-						<h4 className="activity-card__heading">
-							<span className="activity-card__heading-span activity-card__heading-span--1">
-								Experience Wildlife
-							</span>
-						</h4>
-						<div className="activity-card__details">
-							<ul>
-								<li>Game Walk</li>
-								<li>Game Drive</li>
-								<li>Umfurudzi Entrance</li>
-							</ul>
-						</div>
-					</div>
-					<div className="activity-card__side activity-card__side--back activity-card__side--back-1">
-						<div className="activity-card__cta">
-							<div className="activity-card__price-box">
-								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$25</p>
-							</div>
-							<a href="#popup" className="btn btn--white">
-								Book now!
-							</a>
-						</div>
-					</div>
-				</div>
-				<div className="activity-card">
-					<div className="activity-card__side activity-card__side--front">
-						<div className="activity-card__picture activity-card__picture--2">
-							&nbsp;
-						</div>
-						<h4 className="activity-card__heading">
-							<span className="activity-card__heading-span activity-card__heading-span--2">
-								Rest in the Serengeti
-							</span>
-						</h4>
-						<div className="activity-card__details">
-							<ul>
-								<li>Chalets (Day & Night)</li>
-								<li>Chalets (Day)</li>
-								<li>Camping</li>
-							</ul>
-						</div>
-					</div>
-					<div className="activity-card__side activity-card__side--back activity-card__side--back-2">
-						<div className="activity-card__cta">
-							<div className="activity-card__price-box">
-								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$25</p>
-							</div>
-							<a href="#popup" className="btn btn--white">
-								Book now!
-							</a>
-						</div>
-					</div>
-				</div>
-				<div className="activity-card">
-					<div className="activity-card__side activity-card__side--front">
-						<div className="activity-card__picture activity-card__picture--3">
-							&nbsp;
-						</div>
-						<h4 className="activity-card__heading">
-							<span className="activity-card__heading-span activity-card__heading-span--3">
-								Discover the landscape
-							</span>
-						</h4>
-						<div className="activity-card__details">
-							<ul>
-								<li>Canoeing</li>
-								<li>Day Trippers</li>
-								<li>Hiking</li>
-							</ul>
-						</div>
-					</div>
-					<div className="activity-card__side activity-card__side--back activity-card__side--back-3">
-						<div className="activity-card__cta">
-							<div className="activity-card__price-box">
-								<p className="activity-card__price-only">Only</p>
-								<p className="activity-card__price-value">$25</p>
-							</div>
-							<a href="#popup" className="btn btn--white">
-								Book now!
-							</a>
-						</div>
-					</div>
-				</div>
+				<ActivityCard
+					title="Experience Wildlife"
+					activities={["Game Walk", "Game Drive", "Umfurudzi Access"]}
+					price={25}
+					designNumber={1}
+				/>
+				<ActivityCard
+					title="Rest in the Serengeti"
+					activities={["Chalets (Day & Night)", "Chalets (Day)", "Camping"]}
+					price={25}
+					designNumber={2}
+				/>
+				<ActivityCard
+					title="Discover the landscape"
+					activities={["Canoeing", "Day Trips", "Hiking"]}
+					price={25}
+					designNumber={3}
+				/>
 			</div>
 		</section>
 		<section className="section-social">
