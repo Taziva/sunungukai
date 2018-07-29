@@ -27,3 +27,25 @@
 		}
 	}
 }
+
+.nav.fixed {
+	background-color: $color-white;
+	z-index: 9999;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	transition: all 0.5s;
+	padding: 0 2rem;
+}
+.nav.top {
+	background-color: none;
+	z-index: 9999;
+	transition: all 0.5s;
+	padding: 2rem;
+
+	@include respond(tab-land) {
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: 9999;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		transition: all 0.5s;
+		padding: 0 2rem;
+	}
+}
