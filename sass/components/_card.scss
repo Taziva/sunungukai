@@ -5,28 +5,28 @@
 
 .activity-card {
 	// FUNCTIONALITY
-	perspective: 150rem;
-	-moz-perspective: 150rem;
-	position: relative;
-	height: 52rem;
-	width: 32rem;
-	margin: 5rem;
 	@include respond(phone) {
 		width: 38rem;
 	}
+	-moz-perspective: 150rem;
+	height: 52rem;
+	margin: 5rem;
+	perspective: 150rem;
+	position: relative;
+	width: 32rem;
 
 	&__side {
-		height: 52rem;
-		transition: all 0.8s ease;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 		border-radius: 3px;
-		overflow: hidden;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+		height: 52rem;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		transition: all 0.8s ease;
+		width: 100%;
 
 		&--front {
 			background-color: $color-white;
@@ -71,13 +71,13 @@
 
 	// FRONT SIDE STYLING
 	&__picture {
-		background-size: cover;
-		height: 23rem;
-		background-blend-mode: screen;
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		background-blend-mode: screen;
+		background-size: cover;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		height: 23rem;
 
 		&--1 {
 			background-image: linear-gradient(
@@ -85,7 +85,7 @@
 					$color-primary-light,
 					$color-primary-dark
 				),
-				url(/static/images/nat-5.jpg);
+				url("/static/images/nat-5.jpg");
 		}
 
 		&--2 {
@@ -94,7 +94,7 @@
 					$color-secondary-light,
 					$color-secondary-dark
 				),
-				url(/static/images/nat-6.jpg);
+				url("/static/images/nat-6.jpg");
 		}
 
 		&--3 {
@@ -103,26 +103,26 @@
 					$color-tertiary-light,
 					$color-tertiary-dark
 				),
-				url(/static/images/nat-7.jpg);
+				url("/static/images/nat-7.jpg");
 		}
 	}
 
 	&__heading {
+		color: $color-white;
 		font-size: 2.8rem;
 		font-weight: 300;
-		text-transform: uppercase;
-		text-align: right;
-		color: $color-white;
 		position: absolute;
-		top: 12rem;
 		right: 2rem;
+		text-align: right;
+		text-transform: uppercase;
+		top: 12rem;
 		width: 75%;
 	}
 
 	&__heading-span {
-		padding: 1rem 1.5rem;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
+		padding: 1rem 1.5rem;
 
 		&--1 {
 			background-image: linear-gradient(
@@ -154,13 +154,13 @@
 
 		ul {
 			list-style: none;
-			width: 80%;
 			margin: 0 auto;
+			width: 80%;
 
 			li {
-				text-align: center;
 				font-size: 1.5rem;
 				padding: 1rem;
+				text-align: center;
 
 				&:not(:last-child) {
 					border-bottom: 1px solid $color-grey-light-2;
@@ -171,18 +171,18 @@
 
 	// FRONT SIDE STYLING
 	&__cta {
-		position: absolute;
-		top: 50%;
 		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
 		transform: translate(-50%, -50%);
 		width: 90%;
-		text-align: center;
 	}
 
 	&__price-box {
-		text-align: center;
 		color: $color-white;
 		margin-bottom: 8rem;
+		text-align: center;
 	}
 
 	&__price-only {
@@ -197,19 +197,19 @@
 
 	//@include respond(tab-port) {
 	@media only screen and (max-width: 56.25em), only screen and (hover: none) {
-		height: auto;
-		border-radius: 3px;
 		background-color: $color-white;
+		border-radius: 3px;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+		height: auto;
 
 		&__side {
+			box-shadow: none;
 			height: auto;
 			position: relative;
-			box-shadow: none;
 
 			&--back {
-				transform: rotateY(0);
 				clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+				transform: rotateY(0);
 			}
 		}
 
@@ -223,12 +223,12 @@
 
 		// FRONT SIDE STYLING
 		&__cta {
+			left: 0;
+			padding: 7rem 4rem 4rem;
 			position: relative;
 			top: 0%;
-			left: 0;
 			transform: translate(0);
 			width: 100%;
-			padding: 7rem 4rem 4rem 4rem;
 		}
 
 		&__price-box {

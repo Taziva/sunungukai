@@ -1,14 +1,15 @@
 .nav {
-	position: fixed;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	color: $color-secondary;
-	width: 100%;
+	display: flex;
+	justify-content: space-between;
 	padding: 2rem;
+	position: fixed;
+	width: 100%;
+
 	&__logo {
-		font-size: 3rem;
 		font-family: RuffleScript;
+		font-size: 3rem;
 	}
 
 	&__list {
@@ -18,34 +19,36 @@
 	}
 
 	&__link {
-		margin: 0 2rem;
-		font-size: 1.5rem;
 		color: inherit;
+		font-size: 1.5rem;
+		margin: 0 2rem;
 
 		&:visited {
 			color: inherit;
 		}
 	}
-}
 
-.nav.fixed {
-	background-color: $color-white;
-	z-index: 9999;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	transition: all 0.5s;
-	padding: 0 2rem;
-}
-.nav.top {
-	background-color: none;
-	z-index: 9999;
-	transition: all 0.5s;
-	padding: 2rem;
-
-	@include respond(tab-land) {
-		background-color: rgba(0, 0, 0, 0.9);
-		z-index: 9999;
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-		transition: all 0.5s;
+	&.fixed {
+		background-color: $color-white;
+		box-shadow: 0 3px 6px rgba($color-black, 0.16),
+			0 3px 6px rgba($color-black, 0.23);
 		padding: 0 2rem;
+		transition: padding 0.5s, box-shadow 0.5s, background-color 0.5s;
+		z-index: 9999;
+	}
+
+	&.top {
+		@include respond(tab-land) {
+			background-color: rgba($color-black, 0.9);
+			box-shadow: 0 3px 6px rgba($color-black, 0.16),
+				0 3px 6px rgba($color-black, 0.23);
+			padding: 0 2rem;
+			z-index: 9999;
+		}
+
+		background-color: none;
+		padding: 2rem;
+		transition: padding 0.5s, box-shadow 0.5s, background-color 0.5s;
+		z-index: 9999;
 	}
 }
