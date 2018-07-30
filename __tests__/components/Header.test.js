@@ -3,7 +3,12 @@ import React from "react";
 import Header from "../../components/Header.js";
 
 describe("Header", () => {
-	const app = mount(<Header />);
+	let app;
+
+	beforeEach(() => {
+		app = mount(<Header />);
+	});
+
 	it("shows 3 navigation links", () => {
 		expect(app.find("NavLink")).toHaveLength(3);
 		expect(
@@ -36,6 +41,21 @@ describe("Header", () => {
 			expect(app.state().activeClass).toEqual("fixed");
 			simulateScroll(890);
 			expect(app.state().activeClass).toEqual("top");
+		});
+	});
+
+	describe("when toggle nav is clicked", () => {
+		beforeEach(() => {
+			app.find(".icon").simulate("click");
+		});
+		it("adds the responsive class to the nav", () => {
+			expect(app.find(".nav").hasClass("responsive")).toEqual(true);
+			expect(app.state().responsiveClass).toEqual("responsive");
+		});
+		it("removes the responsive class from the nav", () => {
+			app.find(".icon").simulate("click");
+			expect(app.find(".nav").hasClass("responsive")).toEqual(false);
+			expect(app.state().responsiveClass).toEqual("");
 		});
 	});
 });

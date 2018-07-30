@@ -5,8 +5,9 @@
 
 .activity-card {
 	// FUNCTIONALITY
-	@include respond(phone) {
-		width: 38rem;
+	@include respond(tab-land) {
+		margin: 3rem 2rem;
+		width: 34rem;
 	}
 	-moz-perspective: 150rem;
 	height: 52rem;

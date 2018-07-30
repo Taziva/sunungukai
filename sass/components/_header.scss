@@ -1,4 +1,7 @@
 .nav {
+	@include respond(phone) {
+	}
+
 	align-items: center;
 	color: $color-secondary;
 	display: flex;
@@ -6,16 +9,29 @@
 	padding: 2rem;
 	position: fixed;
 	width: 100%;
+	z-index: 9999;
 
 	&__logo {
+		@include respond(phone) {
+			display: inline-block;
+		}
 		font-family: RuffleScript;
 		font-size: 3rem;
+
+		p {
+			@include respond(phone) {
+				display: inline-block;
+			}
+		}
 	}
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
 		list-style-type: none;
+		@include respond(phone) {
+			display: none;
+		}
 	}
 
 	&__link {
@@ -28,7 +44,18 @@
 		}
 	}
 
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		padding: 0 2rem;
+	}
+
 	&.fixed {
+		@include respond(tab-land) {
+			padding: 0;
+		}
 		background-color: $color-white;
 		box-shadow: 0 3px 6px rgba($color-black, 0.16),
 			0 3px 6px rgba($color-black, 0.23);
@@ -42,7 +69,7 @@
 			background-color: rgba($color-black, 0.9);
 			box-shadow: 0 3px 6px rgba($color-black, 0.16),
 				0 3px 6px rgba($color-black, 0.23);
-			padding: 0 2rem;
+			padding: 0;
 			z-index: 9999;
 		}
 
@@ -50,5 +77,67 @@
 		padding: 2rem;
 		transition: padding 0.5s, box-shadow 0.5s, background-color 0.5s;
 		z-index: 9999;
+	}
+
+	&__responsive {
+		&-toggle {
+			@include respond(phone) {
+				display: flex;
+				justify-content: flex-end;
+			}
+			display: none;
+			font-size: $default-font-size;
+			padding: 1rem;
+
+			a {
+				color: $color-primary;
+			}
+		}
+	}
+
+	@include respond(phone) {
+		background-color: $color-black;
+		align-items: unset;
+		box-shadow: 0 1px 3px rgba($color-black, 0.12),
+			0 1px 2px rgba($color-black, 0.24);
+		flex-direction: row;
+		left: 0;
+		margin-bottom: 5rem;
+		padding: 0;
+		position: fixed;
+		top: 0;
+
+		&.responsive {
+			position: fixed;
+			flex-direction: column;
+
+			.nav {
+				transition: all 2s;
+				&__list {
+					align-items: center;
+					flex-direction: column;
+					justify-content: center;
+					margin-bottom: 2rem;
+					margin-top: 0;
+					text-align: center;
+					display: flex;
+				}
+
+				&__link {
+					display: block;
+					float: none;
+					margin: 0.5rem 0;
+					text-align: center;
+
+					a {
+						color: $color-primary;
+
+						&:visited {
+							color: $color-primary;
+						}
+					}
+				}
+			}
+		}
 	}
 }
