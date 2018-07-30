@@ -1,5 +1,5 @@
-import NavLink from "./navigation/NavLink";
 import { Component } from "react";
+import NavList from "./navigation/NavList";
 
 export default class Header extends Component {
 	state = { activeClass: "", responsiveClass: "" };
@@ -56,17 +56,7 @@ export default class Header extends Component {
 						</a>
 					</div>
 				</div>
-				<ul className="nav__list">
-					<li>
-						<NavLink href="/" name="Home" />
-					</li>
-					<li>
-						<NavLink href="/blog" name="Blog" />
-					</li>
-					<li>
-						<NavLink href="/about" name="About" />
-					</li>
-				</ul>
+				<NavList />
 			</nav>
 		);
 	}
