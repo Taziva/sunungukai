@@ -32,19 +32,29 @@
 			justify-content: space-around;
 
 			&-player {
+				@include respond(phone) {
+					width: 75%;
+				}
 				width: 50%;
 			}
 		}
 
 		&__text {
+			@include respond(phone) {
+				padding: 5rem;
+			}
 			padding: 10rem 33rem;
 			text-align: center;
 		}
 	}
 
 	&-benefits {
-		@include respond(phone) {
+		@include respond(tab-port) {
 			flex-direction: column;
+			padding: 6rem;
+		}
+
+		@include respond(phone) {
 			padding: 3rem;
 		}
 
@@ -53,6 +63,15 @@
 		justify-content: space-between;
 
 		&__card {
+			@include respond(tab-port) {
+				flex-direction: column;
+				margin: 2rem 15rem;
+			}
+
+			@include respond(phone) {
+				margin: 3rem;
+				padding: 2rem;
+			}
 			margin: 5rem;
 			padding: 3rem;
 
@@ -74,7 +93,7 @@
 		flex-direction: column;
 
 		&__content {
-			@include respond(phone) {
+			@include respond(tab-port) {
 				flex-direction: column;
 			}
 			display: flex;
