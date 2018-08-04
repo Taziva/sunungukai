@@ -32,7 +32,7 @@ const Landing = () => (
 				</video>
 			</div>
 			<div className="section-info__text">
-				<h2 className="heading-secondary">fantastic wildlife adventures</h2>
+				<h2 className="heading-secondary">Fantastic Wildlife Adventures</h2>
 				<p className="paragraph">
 					Come for an adventure in the African serengeti surrounded by beautiful
 					scenery and natural phenomenons. Interact with local wildlife
@@ -70,7 +70,9 @@ const Landing = () => (
 			</Card>
 		</section>
 		<section className="section-activities">
-			<h2 className="heading-secondary">activities and attractions</h2>
+			<h2 className="section-activities__title heading-secondary">
+				Activities and Attractions
+			</h2>
 			<div className="section-activities__content">
 				<ActivityCard
 					title="Experience Wildlife"

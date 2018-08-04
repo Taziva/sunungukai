@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
 						crossOrigin="anonymous"
 					/>
 					<link
-						href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+						href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:100,300,400,700,900"
 						rel="stylesheet"
 					/>
 					<link rel="stylesheet" href="/_next/static/style.css" />
