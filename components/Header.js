@@ -7,7 +7,7 @@ export default class Header extends Component {
 	componentDidMount() {
 		window.addEventListener("scroll", event => {
 			let activeClass = this.state.activeClass;
-			if (window.pageYOffset > 890) {
+			if (window.pageYOffset > 870) {
 				activeClass = "fixed";
 			} else {
 				activeClass = "top";
@@ -45,7 +45,9 @@ export default class Header extends Component {
 			>
 				<div className="nav__row">
 					<div className="nav__logo">
-						<p>Sunungukai</p>
+						<p>
+							Sunungukai <img src="static/images/paw-print.svg" width={35} />
+						</p>
 					</div>
 					<div className="nav__responsive-toggle">
 						<a className="icon" onClick={this.toggleResponsiveNav.bind(this)}>
