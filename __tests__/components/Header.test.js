@@ -39,7 +39,7 @@ describe("Header", () => {
 		it("changes the activeClass", () => {
 			simulateScroll(910);
 			expect(app.state().activeClass).toEqual("fixed");
-			simulateScroll(890);
+			simulateScroll(850);
 			expect(app.state().activeClass).toEqual("top");
 		});
 	});

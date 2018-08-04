@@ -1,5 +1,6 @@
 import { Component } from "react";
 import NavList from "./navigation/NavList";
+import NavLogo from "./navigation/NavLogo";
 
 export default class Header extends Component {
 	state = { activeClass: "", responsiveClass: "" };
@@ -44,11 +45,7 @@ export default class Header extends Component {
 				}}
 			>
 				<div className="nav__row">
-					<div className="nav__logo">
-						<p>
-							Sunungukai <img src="static/images/paw-print.svg" width={35} />
-						</p>
-					</div>
+					<NavLogo />
 					<div className="nav__responsive-toggle">
 						<a className="icon" onClick={this.toggleResponsiveNav.bind(this)}>
 							<img
